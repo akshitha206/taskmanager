@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Personal Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+    <div class="login-box">
+        <!-- Logo Section -->
+        <div class="logo">
+            <h1>📋</h1>
+            <h2>Task Manager</h2>
+        </div>
+
+        <!-- Signup Form -->
+        <form id="signupForm" onsubmit="handleSignup(event)">
+            <input 
+                type="text" 
+                id="signupUsername" 
+                placeholder="Username" 
+                required
+            >
+            <input 
+                type="password" 
+                id="signupPassword" 
+                placeholder="Password" 
+                required
+            >
+            <input 
+                type="password" 
+                id="signupConfirmPassword" 
+                placeholder="Confirm Password" 
+                required
+            >
+            <button type="submit" class="btn-primary">Create Account</button>
+        </form>
+
+        <!-- Login Link -->
+        <p>Already have an account?</p>
+        <a href="index.html" class="link">Login</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

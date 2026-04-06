@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Personal Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1 class="navbar-title">📋 Personal Task Manager</h1>
+        </div>
+        <div class="navbar-right">
+            <span id="userProfile" class="user-profile">👤 User</span>
+            <button onclick="handleLogout()" class="btn-logout">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Statistics Cards Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks" class="stat-number">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks" class="stat-number">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks" class="stat-number">0</p>
+            </div>
+        </div>
+
+        <!-- Task Management Section -->
+        <div class="task-section">
+            <h2>My Tasks</h2>
+            
+            <!-- Add Task Form -->
+            <div class="add-task-form">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Enter a new task..."
+                    class="task-input"
+                >
+                <button onclick="addTask()" class="btn-primary">Add Task</button>
+            </div>
+
+            <!-- Task List -->
+            <div id="taskList" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
